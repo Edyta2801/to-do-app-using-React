@@ -28,6 +28,12 @@ const baseConfig = () => ({
 });
 
 const devConfig = () => ({
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './',
+    port: 9000
+  },
+
   module: {
     rules: [
       {
