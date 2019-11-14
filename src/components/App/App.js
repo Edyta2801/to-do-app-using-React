@@ -12,13 +12,11 @@ class App extends React.Component {
         <h2 className={styles.subtitle}>Hello world!</h2>
 
         <List
-          title={'Things to do'}
-
-          image={'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png'}
-          // <p>I'm planing on doing all these things sooner, rather than later!</p>
-        />
+          title={["Things to do ", <sup key="1">soon!</sup>]} image='http://uploads.kodilla.com/bootcamp/fer/11.react/space.png'>
+          <p>I'm planning on doing all these things sooner, rather than later!</p>
+        </List>
       </main >
-    )
+    );
   }
 }
 
