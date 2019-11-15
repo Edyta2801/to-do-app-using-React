@@ -8,6 +8,10 @@ import ReactHtmlParser from 'react-html-parser';
 
 
 class List extends React.Component {
+
+  state={
+    columns:this.props.colums || [],
+  }
   static propTypes = {
     title: PropTypes.node.isRequired,
     description:PropTypes.node,
