@@ -3,6 +3,7 @@ import styles from './Creator.scss';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 
+
 class Creator extends React.Component {
   static propTypes = {
     text: PropTypes.string,
@@ -17,7 +18,7 @@ class Creator extends React.Component {
     visibleButtons: false,
   }
 
-  handleChange(event){
+  handleChange(event) {
     // console.log(event);
     this.setState({
       value: event.target.value,
@@ -25,8 +26,8 @@ class Creator extends React.Component {
     });
   }
 
-  handleOK(){
-    if(this.state.value != ''){
+  handleOK() {
+    if (this.state.value != '') {
       this.props.action(this.state.value);
       this.setState({
         value: '',
@@ -35,7 +36,7 @@ class Creator extends React.Component {
     }
   }
 
-  handleCancel(){
+  handleCancel() {
     this.setState({
       value: '',
       visibleButtons: false
@@ -43,6 +44,7 @@ class Creator extends React.Component {
   }
 
   render() {
+
     return (
       <div className={styles.component}>
         <input
@@ -55,6 +57,7 @@ class Creator extends React.Component {
           <Button onClick={() => this.handleOK()}>OK</Button>
           <Button onClick={() => this.handleCancel()} variant='danger'>cancel</Button>
         </div>
+
       </div>
     );
   }
