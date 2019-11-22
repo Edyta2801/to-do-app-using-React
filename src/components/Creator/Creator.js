@@ -22,16 +22,17 @@ class Creator extends React.Component {
     // console.log(event);
     this.setState({
       value: event.target.value,
-      visibleButtons: event.target.value.length > 0
+      visibleButtons: event.target.value.length > 0,
     });
   }
 
   handleOK() {
     if (this.state.value != '') {
+      // eslint-disable-next-line react/prop-types
       this.props.action(this.state.value);
       this.setState({
         value: '',
-        visibleButtons: false
+        visibleButtons: false,
       });
     }
   }
@@ -39,7 +40,7 @@ class Creator extends React.Component {
   handleCancel() {
     this.setState({
       value: '',
-      visibleButtons: false
+      visibleButtons: false,
     });
   }
 
@@ -58,7 +59,7 @@ class Creator extends React.Component {
           <Button onClick={() => this.handleOK()}>OK</Button>
           {/* <Button onClick={() => this.handleCancel()} variant='danger'>cancel</Button> */}
           <Button onClick={() => {
-            if (window.confirm("Are you sure you want to delete this item?")) this.handleCancel();
+            if (window.confirm('Are you sure you want to delete this item?')) this.handleCancel();
           }} variant='danger'>cancel</Button>
 
         </div>

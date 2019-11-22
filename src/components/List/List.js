@@ -20,7 +20,7 @@ class List extends React.Component {
     image: PropTypes.string.isRequired,
   }
   static defaultProps = {
-    description: settings.defaultListDescription
+    description: settings.defaultListDescription,
   }
 
   addColumn(title) {
@@ -31,9 +31,9 @@ class List extends React.Component {
           key: state.columns.length ? state.columns[state.columns.length - 1].key + 1 : 0,
           title,
           icon: 'list-alt',
-          cards: []
-        }
-      ]
+          cards: [],
+        },
+      ],
     }));
   }
   render() {
