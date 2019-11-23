@@ -141,11 +141,11 @@ const cards = [
   },
 ];
 
-const storeInitialState = {
+const initialStoreData = {
   app: {...pageContents},
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
 };
 
-export default storeInitialState;
+export default initialStoreData;
