@@ -7,8 +7,8 @@ import styles from './App.scss';
 
 class App extends React.Component {
   static propTypes={
-    title:PropTypes.node,
-    subtitle:PropTypes.node,
+    title:PropTypes.node.isRequired,
+    subtitle:PropTypes.node.isRequired,
 
   }
   render() {
