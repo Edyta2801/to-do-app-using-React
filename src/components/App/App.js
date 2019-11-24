@@ -2,13 +2,14 @@
 import React from 'react';
 import styles from './App.scss';
 // import List from '../List/List.js';
+import PropTypes from 'prop-types';
 
 
 
 class App extends React.Component {
   static propTypes={
-    title:PropTypes.node.isRequired,
-    subtitle:PropTypes.node.isRequired,
+    title:PropTypes.node,
+    subtitle:PropTypes.node,
 
   }
   render() {
