@@ -4,6 +4,7 @@ import Icon from '../Icon/Icon.js';
 // import Creator from '../Creator/Creator.js';
 import Card from '../Card/Card.js';
 import PropTypes from 'prop-types';
+import { settings } from 'cluster';
 // import { settings } from '../../data/dataStore.js';
 
 
@@ -11,6 +12,11 @@ class Column extends React.Component {
   // state = {
   //   cards: this.props.cards || [],
   // }
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
+  }
+
+
   static propTypes = {
     title: PropTypes.node.isRequired,
     // image: PropTypes.string.isRequired,
@@ -33,7 +39,7 @@ class Column extends React.Component {
   // }
 
   render() {
-    const {title, icon, cards}=this.props;
+    const { title, icon, cards } = this.props;
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>{title}</h3>
