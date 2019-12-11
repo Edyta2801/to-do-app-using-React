@@ -2,7 +2,7 @@ export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
   header: {
-    icon: 'rocket',
+    icon: 'cat',
     homeTitle: 'Home',
     infoTitle: 'Info',
     faqTitle: 'FAQ',
@@ -79,13 +79,13 @@ export const listData = {
 };
 
 export const infoData = {
-  title: 'Page Info',
+  title: 'Info',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   content: 'Some information about Single Page Application',
 };
 
 export const faqData = {
-  title: 'Page FAQ',
+  title: 'FAQ',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   content: 'Frequently Asked Questions about Single Page Application',
 };

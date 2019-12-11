@@ -10,4 +10,4 @@ const FAQ = () => (
   </Container>
 );
 
-export default FAQ; 
+export default FAQ;
