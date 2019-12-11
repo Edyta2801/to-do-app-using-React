@@ -72,6 +72,18 @@ export const listData = {
   ],
 };
 
+export const infoData = {
+  title: 'Page Info',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  content: 'Some information about Single Page Application',
+};
+
+export const faqData = {
+  title: 'Page FAQ',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  content: 'Frequently Asked Questions about Single Page Application',
+};
+
 const lists = [
   {
     id: 'list-1',
@@ -142,7 +154,7 @@ const cards = [
 ];
 
 const initialStoreData = {
-  app: {...pageContents},
+  app: { ...pageContents },
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
