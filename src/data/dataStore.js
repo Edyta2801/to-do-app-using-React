@@ -1,6 +1,12 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  header: {
+    icon: 'rocket',
+    homeTitle: 'Home',
+    infoTitle: 'Info',
+    faqTitle: 'FAQ',
+  },
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
