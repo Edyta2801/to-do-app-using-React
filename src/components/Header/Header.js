@@ -4,6 +4,7 @@ import styles from './Header.scss';
 import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
 import { settings } from '../../data/dataStore';
+import Search  from '../Search/Search.js';
 
 
 export default class Header extends Component {
@@ -21,6 +22,7 @@ export default class Header extends Component {
               <NavLink exact to='/' activeClassName='active'>{homeTitle}</NavLink>
               <NavLink exact to='/info' activeClassName='active'>{infoTitle}</NavLink>
               <NavLink exact to='/faq' activeClassName='active'>{faqTitle}</NavLink>
+              <Search/>
             </nav>
           </div>
         </Container>
