@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
 import Container from '../Container/Container';
-import {withRouter}from 'react-router';
+import { withRouter } from 'react-router';
 
 class Search extends React.Component {
   static propTypes = {
@@ -14,7 +14,7 @@ class Search extends React.Component {
     changeSearchString: PropTypes.func,
     countVisible: PropTypes.number,
     countAll: PropTypes.number,
-    history:PropTypes.object,
+    history: PropTypes.object,
   }
 
   static defaultProps = {
@@ -56,9 +56,7 @@ class Search extends React.Component {
             value={value}
             onChange={event => this.handleChange(event)}
           />
-          <div className={styles.buttons}>
-            <Button onClick={() => this.handleOK()}><Icon name={icon} /></Button>
-          </div>
+          <Button onClick={() => this.handleOK()}><Icon name={icon} /></Button>
           <div>
             {countVisible == countAll ? '' : `${countVisible} / ${countAll}`}
           </div>

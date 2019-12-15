@@ -18,11 +18,11 @@ export default class Header extends Component {
             <Link to='/' className={styles.logo} >
               <Icon name={icon} />
             </Link>
+            <Search/>
             <nav>
               <NavLink exact to='/' activeClassName='active'>{homeTitle}</NavLink>
               <NavLink exact to='/info' activeClassName='active'>{infoTitle}</NavLink>
               <NavLink exact to='/faq' activeClassName='active'>{faqTitle}</NavLink>
-              <Search/>
             </nav>
           </div>
         </Container>
