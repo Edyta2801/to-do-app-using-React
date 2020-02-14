@@ -1,5 +1,5 @@
 # To do app
-Application for creating lists things to do.
+Application for creating to-do lists.
 
 ## See [DEMO](https:/to-do-app-using-react.herokuapp.com)
 
