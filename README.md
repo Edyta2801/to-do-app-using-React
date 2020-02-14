@@ -1,3 +1,13 @@
-# React_first-steps
+# To do app
+Application for creating lists things to do.
 
-https://to-do-app-using-react.herokuapp.com/
+## See [DEMO](https:/to-do-app-using-react.herokuapp.com)
+
+![](./images/screenshot_1.png)
+
+## Technologies
+* HTML
+* SASS
+* React
+* Webpack
+* NPM
