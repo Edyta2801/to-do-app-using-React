@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;CACf",
+    "sources": [
+        "Container.scss",
+        "../../styles/settings.scss"
+    ],
+    "names": [],
+    "file": "Container.css"
+}
